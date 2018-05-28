@@ -7,8 +7,8 @@ export default class Container extends Component {
     super();
 
     this.settings = {
-      character  : 1,
-      paragraphs : 5,
+      character  : null,
+      paragraphs : 3,
       sentences  : 4,
     }
   }

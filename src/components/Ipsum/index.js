@@ -18,12 +18,12 @@ export default class Ipsum extends Component {
     return Math.floor(Math.random() * (max - min)) + min;
   }
 
-  renderParagraph = () => {
+  renderParagraph = (key) => {
     const { sentences } = this.props;
     const text = Array(sentences).fill('').map(el => el = this.getQuote());
 
     return (
-      <p>
+      <p key={ `p-${key}` }>
         { text.join('') }
       </p>
     );
@@ -31,7 +31,8 @@ export default class Ipsum extends Component {
 
   render() {
     const { paragraphs } = this.props;
-    const ipsum = Array(paragraphs).fill(null).map(el => el = this.renderParagraph());
+    const ipsum = Array(paragraphs).fill(null)
+      .map((el, i) => el = this.renderParagraph(i));
 
     return (
       <div>
