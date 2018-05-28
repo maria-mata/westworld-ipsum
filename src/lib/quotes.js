@@ -1,6 +1,7 @@
 // quotes taken from https://quotecatalog.com/quotes/tv/westworld/
-
-import { DOLORES, FORD, MAEVE } from './characters';
+const DOLORES = 1;
+const FORD    = 2;
+const MAEVE   = 3;
 
 export default [
   {

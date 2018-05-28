@@ -7,7 +7,7 @@ export default class Form extends Component {
     const { updateSettings } = this.props;
 
     return (
-      <form onSubmit="updateSettings">
+      <form onSubmit={ updateSettings }>
         <input type="radio" name="character" value="1" />
         <label>Dolores</label>
         <input type="radio" name="character" value="2" />
