@@ -6,22 +6,25 @@ export default class Container extends Component {
   constructor() {
     super();
 
-    this.settings = {
-      character  : null,
+    this.state = {
+      character  : 0,
       paragraphs : 3,
-      sentences  : 4,
+      sentences  : 3,
     }
   }
 
-  updateSettings = settings => this.settings = settings;
+  setIpsum = values => this.setState(state => values);
 
   render() {
-    const { character, paragraphs, sentences } = this.settings;
+    const { character, paragraphs, sentences } = this.state;
 
     return (
       <div>
         <Form { ...{
-          updateSettings: this.updateSettings
+          character,
+          paragraphs,
+          sentences,
+          setIpsum: this.setIpsum
         } } />
 
         <Ipsum { ...{
