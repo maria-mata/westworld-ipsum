@@ -1,4 +1,4 @@
-import quotes               from '../../lib/quotes';
+import { QUOTES }           from '../../lib/quotes';
 import React, { Component } from 'react';
 
 export default class Ipsum extends Component {
@@ -16,9 +16,9 @@ export default class Ipsum extends Component {
   getQuote = () => {
     const { character } = this.props;
 
-    if (!character) return quotes[this.getRandomIndex(quotes.length)].text;
+    if (!character) return QUOTES[this.getRandomIndex(QUOTES.length)].text;
 
-    const characterQuotes = quotes.filter(quote => quote.character === character);
+    const characterQuotes = QUOTES.filter(quote => quote.character === character);
 
     return characterQuotes[this.getRandomIndex(characterQuotes.length)].text;
   }

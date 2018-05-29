@@ -1,3 +1,4 @@
+import { ANY }              from '../../lib/quotes';
 import Form                 from '../Form';
 import Ipsum                from '../Ipsum';
 import React, { Component } from 'react';
@@ -7,7 +8,7 @@ export default class Container extends Component {
     super();
 
     this.state = {
-      character  : 0,
+      character  : ANY,
       paragraphs : 3,
       sentences  : 3,
     }
@@ -24,7 +25,7 @@ export default class Container extends Component {
           character,
           paragraphs,
           sentences,
-          setIpsum: this.setIpsum
+          setIpsum : this.setIpsum
         } } />
 
         <Ipsum { ...{

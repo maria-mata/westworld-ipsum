@@ -1,9 +1,10 @@
 // quotes taken from https://quotecatalog.com/quotes/tv/westworld/
-const DOLORES = 1;
-const FORD    = 2;
-const MAEVE   = 3;
+export const ANY     = 0;
+export const DOLORES = 1;
+export const FORD    = 2;
+export const MAEVE   = 3;
 
-export default [
+export const QUOTES  = [
   {
     character : DOLORES,
     text      : 'Someday sounds a lot like the thing people say when they actually mean never. '
