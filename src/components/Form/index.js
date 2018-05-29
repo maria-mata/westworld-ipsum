@@ -1,4 +1,4 @@
-import { ANY, DOLORES, FORD, MAEVE } from '../../lib/quotes';
+import { ANY, DOLORES, FORD, MAEVE } from '../../lib/constants';
 import { Formik }                    from 'formik';
 import { object, mixed }             from 'yup';
 import React, { Component }          from 'react';

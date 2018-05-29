@@ -1,4 +1,4 @@
-import { QUOTES }           from '../../lib/quotes';
+import { QUOTES }           from '../../lib/constants';
 import React, { Component } from 'react';
 
 export default class Ipsum extends Component {

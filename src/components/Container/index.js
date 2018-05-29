@@ -1,4 +1,4 @@
-import { ANY }              from '../../lib/quotes';
+import { ANY }              from '../../lib/constants';
 import Form                 from '../Form';
 import Ipsum                from '../Ipsum';
 import React, { Component } from 'react';
