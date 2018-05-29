@@ -1,4 +1,4 @@
-import { QUOTES }           from '../../lib/constants';
+import { ANY, QUOTES }      from '../../lib/constants';
 import React, { Component } from 'react';
 
 export default class Ipsum extends Component {
@@ -16,7 +16,7 @@ export default class Ipsum extends Component {
   getQuote = () => {
     const { character } = this.props;
 
-    if (!character) return QUOTES[this.getRandomIndex(QUOTES.length)].text;
+    if (character === ANY) return QUOTES[this.getRandomIndex(QUOTES.length)].text;
 
     const characterQuotes = QUOTES.filter(quote => quote.character === character);
 
